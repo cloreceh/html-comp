@@ -1,4 +1,46 @@
 /* Add screen styles below */
-a.active {
-    font-weight: bold;
+body{
+    background: #F2E9E4;
+    margin-top: 50px;
+    font-family: "Instrument Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+.short-description {
+    background: #F2E9E4;
+    color: #22223B;
+    margin: 0 auto;
+    font-family: "Instrument Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+.information_block {
+    background: #F2E9E4;
+    color: #22223B;
+    margin: 0 auto;
+    font-family: "Instrument Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+h2{
+    text-align: center;
+    padding-top: 0px;
+}
+h1{
+    background: #4A4E69;
+    color: #ffffff;
+    margin: 15px;
+}
+img {
+    float: left;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0);
 }
