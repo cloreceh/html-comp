@@ -1,46 +1,78 @@
-/* Add screen styles below */
+/* Root color variables */
+:root{
+    --main-bg:#F2E9E4; 
+    --main-bg-alt:#4A4E69;
+    --main-type: #22223B;
+    --main-type-alt: #ffffff;
+}
+
+
 body{
-    background: #F2E9E4;
-    margin-top: 50px;
+    margin: 0;
+    padding: 0;
+    background: var(--main-bg);
     font-family: "Instrument Sans", serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
+    font-variation-settings: "wdth" 100;
+    padding-top: 80px;
 }
+
+h1{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 80px;
+    line-height: 80px;
+    background: var(--main-bg-alt);
+    color: var(--main-type-alt);
+    margin: 0;
+    z-index: 1000;
+    padding-left: 40px;
+    align-items: center;
+}
+
 .short-description {
-    background: #F2E9E4;
-    color: #22223B;
-    margin: 0 auto;
-    font-family: "Instrument Sans", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
+    background: var(--main-bg);
+    color: var(--main-type);
+    margin: 0 12%;
+    margin-top: 160px;
+    text-align: center;
+    font-size: 26px;
 }
-.information_block {
-    background: #F2E9E4;
-    color: #22223B;
-    margin: 0 auto;
-    font-family: "Instrument Sans", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
-}
-h2{
+
+.blurb{
     text-align: center;
     padding-top: 0px;
 }
-h1{
-    background: #4A4E69;
-    color: #ffffff;
-    margin: 15px;
+
+.info_block {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    max-width: 950px;
+    margin: 0 auto;
+    padding-top: 30px;
+    background: var(--main-bg);
+    color: var(--main-type);
 }
-img {
-    float: left;
+
+.info_block img {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0);
+    height: auto;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    padding-left: 20px;
+    margin-top: -40px;
+}
+
+.info h2{
+    font-weight: 200;
 }
